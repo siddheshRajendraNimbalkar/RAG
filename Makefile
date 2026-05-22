@@ -20,6 +20,10 @@ ingest:
 retrieve:
 	python retrieval_pipeline.py
 
+# Run History aware Generation Pipeline
+history:
+	python history_aware_generation.py
+
 # Delete Chroma DB Folder
 clean-db:
 	rmdir /s /q db\chroma_db
